@@ -43,25 +43,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OCP\GoodDesign\Vehicle.cs" />
-    <Compile Include="OCP\GoodDesign\VehicleFactory.cs" />
+    <Compile Include="DependencyInversionPrinciple\BadDesign\Fish.cs" />
+    <Compile Include="DependencyInversionPrinciple\BadDesign\Poultry.cs" />
+    <Compile Include="DependencyInversionPrinciple\BadDesign\Restaurant.cs" />
+    <Compile Include="DependencyInversionPrinciple\GoodDesign\Abstraction\IProduct.cs" />
+    <Compile Include="DependencyInversionPrinciple\GoodDesign\Concrete\Fish.cs" />
+    <Compile Include="DependencyInversionPrinciple\GoodDesign\Concrete\Meat.cs" />
+    <Compile Include="DependencyInversionPrinciple\GoodDesign\Concrete\Poultry.cs" />
+    <Compile Include="DependencyInversionPrinciple\GoodDesign\Concrete\Restaurant.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\BadDesign\Abstraction\IBird.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\BadDesign\Concrete\Eagle.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\BadDesign\Concrete\Penguin.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\GoodDesign\Abstraction\IFlightlessBird.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\GoodDesign\Abstraction\IFlyingBird.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\GoodDesign\Concrete\Eagle.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\GoodDesign\Concrete\Penguin.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\BadDesign\AreaCalculator.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\BadDesign\Rectangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\BadDesign\Square.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\GoodDesign\Abstraction\Shape.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\GoodDesign\Concrete\Rectangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\GoodDesign\Concrete\Square.cs" />
+    <Compile Include="OpenClosedPrinciple\GoodDesign\Vehicle.cs" />
+    <Compile Include="OpenClosedPrinciple\GoodDesign\VehicleFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OCP\BadDesign\Vehicle.cs" />
-    <Compile Include="OCP\BadDesign\VehicleFactory.cs" />
-    <Compile Include="SRP\BadDesign\BankAccount.cs" />
-    <Compile Include="SRP\GoodDesign\BankAccount.cs" />
-    <Compile Include="SRP\GoodDesign\DataService.cs" />
-    <Compile Include="SRP\GoodDesign\IBankAccount.cs" />
-    <Compile Include="SRP\GoodDesign\IDataService.cs" />
+    <Compile Include="OpenClosedPrinciple\BadDesign\Vehicle.cs" />
+    <Compile Include="OpenClosedPrinciple\BadDesign\VehicleFactory.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\BadDesign\BankAccount.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\GoodDesign\BankAccount.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\GoodDesign\DataService.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\GoodDesign\IBankAccount.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\GoodDesign\IDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DIP\" />
-    <Folder Include="ISP\" />
-    <Folder Include="LSP\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
